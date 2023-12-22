@@ -96,6 +96,31 @@
     }else{
         console.log("SIAGA 1")
     }
+
+    
+        
+        //soal looping
+        //angka genap
+        for( let a= 0; a <=10 ; a+=2)
+        console.log("sesuatu", a)
+        //angka ganjil
+        for( let b= 1; b<=10; b+=2)
+        console.log("berapa",b)
+        //angka faktorial
+        function hitungfaktorial(n){
+            let hasilfaktorial =1;
+
+            for (let i =1;i <=n; i++ ){
+                hasilfaktorial *=i;
+            }
+            return hasilfaktorial;
+        }
+
+        //contoh penggunaan
+        const n = prompt('masukan nilai faktorial');
+        const hasilfaktorial = hitungfaktorial(n);
+
+        console.log(`faktorial dari ${n} adalah : ${hasilfaktorial}`);
     </script>
 </body>
 </html>
