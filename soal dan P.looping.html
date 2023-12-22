@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //penerimaan siswa baru
+        // let jalur = prompt("pilih jalur rapot atau tes mandiri")
+        // let nilaiUN = prompt ("masukan nilai UN");
+        // let tesmandiri =  prompt("masukan nilai mandiri") ;
+
+        // if(nilaiUN <= 100 && nilaiUN >=90){
+        //     console.log("nilai sempurna dan lolos")
+        //  }else if(nilaiUN <=89 && nilaiUN >= 80){
+        //     if( jalur){
+        //         console.log("prestasi")
+        //     }else if(jalur){
+        //         console.log('raport')
+        //     }
+        // }
+        //tegar
+        let nilai = prompt("masukan nilai anda");
+
+        if (nilai >= 90 && nilai <= 100) {
+        console.log('selamat anda lolos');
+        }
+        else if(nilai >=80 && nilai <=89){
+            jalur =prompt("pilih jalur rapot atau prestasi");
+            if (jalur ==("rapot")){
+                console.log("anda memilih jalur rapot");
+            }else if(jalur ==('prestasi')){
+                console.log('anda memilih jalur prestasi');
+            }
+        }else{
+            console.log("tes mandiri");
+            hasiltes =prompt('masukan nilai hasil tes')
+            if (hasiltes >=79 && hasiltes<=100){
+                console.log('anda lolos tes');
+            }else{
+                console.log('anda gagal')
+            }
+        }
+
+        //looping
+
+        //for
+        for(let z =0; z <=5; z++){
+            console.log('data ke -',z)
+        }
+
+        //while
+        let x =1
+        // x sama dengan satu
+        while(x<=5){                                //while jika nilai let lebih besar dari while maka akan error
+            //lalu jika x nya kurang dari 10
+            //maka x++ dan munculkan consolog ke layar
+            console.log('data x ke -',x)
+            x++
+        }
+        //do while
+        let y = 1
+        // do adalah lakukan apa dulu
+        do{                                    //jika do while nilai letnya lebih besar dari nilai whilenya maka
+            console.log("data y ke -",y)       //hanya akan menampilkan nilai let nya saja
+            y++
+            //lalu naikan nilainya y++ selama
+        }while (y <= 5)
+    </script>
+</body>
+</html>
